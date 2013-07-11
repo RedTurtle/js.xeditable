@@ -1,0 +1,19 @@
+How to use?
+===========
+
+This should be setup before rendering a page. See `fanstatic`_ for more
+information::
+
+  >>> from fanstatic import init_needed
+  >>> needed = init_needed(base_url='http://localhost')
+
+You can import xeditable from ``js.xeditable`` and ``.need`` it
+where you want these resources to be included on a page::
+
+  >>> from js.xeditable import bootstrap_editable
+  >>> bootstrap_editable.need()
+
+Render the inclusion::
+
+  >>> print needed.render()
+  <script type="text/javascript" src="http://localhost/fanstatic/xeditable/js/bootstrap-editable.js"></script>

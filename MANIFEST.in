@@ -1,0 +1,3 @@
+recursive-include js/xeditable/resources *.js *.css *.png
+recursive-include js/xeditable *.txt
+include *.txt *.rst
